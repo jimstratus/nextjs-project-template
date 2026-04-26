@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Project Template
 
-## Getting Started
+Starter template for Next.js projects with TypeScript and Tailwind CSS. Bootstrap a new Next.js app with a clean, pre-configured foundation.
 
-First, run the development server:
+## Quick Start
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to see your app.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## What's Included
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Next.js 15+** with App Router
+- **TypeScript** for type safety
+- **Tailwind CSS** for utility-first styling
+- **shadcn/ui** components pre-configured via `components.json`
+- **ESLint** for code quality
+- **Geist font** via `next/font` for modern typography
+
+## Using as a Template
+
+### GitHub Template
+
+1. Click "Use this template" on the repository page
+2. Create a new repository from this template
+3. Clone your new repo and run `npm install`
+
+### Manual
+
+```bash
+git clone https://github.com/jimstratus/nextjs-project-template.git my-new-project
+cd my-new-project
+rm -rf .git
+git init
+npm install
+```
+
+Then customize `package.json` and `next.config.ts` for your project.
+
+## Project Structure
+
+```
+├── app/              # App Router pages and layouts
+├── components/       # Shared React components
+├── components.json   # shadcn/ui configuration
+├── next.config.ts    # Next.js configuration
+├── tailwind.config.ts # Tailwind CSS configuration
+└── tsconfig.json     # TypeScript configuration
+```
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+- [shadcn/ui Documentation](https://ui.shadcn.com)
